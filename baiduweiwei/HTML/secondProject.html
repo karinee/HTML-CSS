@@ -72,7 +72,7 @@
         <li>排名2</li>
         <li>排名3</li>
     </ol>
-    <table border="1">
+    <table id="table1" border="1">
         <caption>下面是一个表格</caption>
         <thead>
         <tr>
@@ -113,36 +113,86 @@
     </div>
 </div>
 <div class="section">
-    <nav class="content">
-        <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
-        <div id="info">
-            <div id="left_info">
-                <span>请输入邮箱地址</span><br/><br/><br/>
-                <span>请输入密码</span><br/><br/>
-                <span>请重复输入密码</span><br/><br/><br/><br/>
-                <span class="charact">性别</span>
-                <span class="charact">城市</span>
-                <span class="charact">爱好</span>
-                <span class="charact">个人描述</span>
-            </div>
-            <div id="right_info">
-                <input type="text"  value="这是一个文本输入框"><p class="tip">邮箱地址请按要求格式输入</p>
-                <input type="password"  value="这是一个文本输入框"><br/><br/>
-                <input type="password"  value="这是一个文本输入框"><p class="tip">密码请为6-16位英文数字</p><br/>
-                <div class="charact"><input type="radio"  name="1" checked="checked"><span>男</span><input type="radio" name="1"><span>女</span></div>
-                <select class="charact"><option value="广州">广州</option>
-                        <option value="北京" selected="selected">北京</option>
-                        <option value="杭州">杭州</option>
-                </select>
-                <div class="charact">
-                <input type="checkbox" name="hobby"><span>运动</span>
+    <!--<nav class="content">-->
+        <!--<h2>这里以后是一个侧栏，这是侧栏的标题</h2>-->
+        <!--<div id="info">-->
+            <!--<div id="left_info">-->
+                <!--<span>请输入邮箱地址</span><br/><br/><br/>-->
+                <!--<span>请输入密码</span><br/><br/>-->
+                <!--<span>请重复输入密码</span><br/><br/><br/><br/>-->
+                <!--<span class="charact">性别</span>-->
+                <!--<span class="charact">城市</span>-->
+                <!--<span class="charact">爱好</span>-->
+                <!--<span class="charact">个人描述</span>-->
+            <!--</div>-->
+            <!--<div id="right_info">-->
+                <!--<input type="text"  value="这是一个文本输入框"><p class="tip">邮箱地址请按要求格式输入</p>-->
+                <!--<input type="password"  value="这是一个文本输入框"><br/><br/>-->
+                <!--<input type="password"  value="这是一个文本输入框"><p class="tip">密码请为6-16位英文数字</p><br/>-->
+                <!--<div class="charact"><input type="radio"  name="1" checked="checked"><span>男</span><input type="radio" name="1"><span>女</span></div>-->
+                <!--<select class="charact"><option value="广州">广州</option>-->
+                        <!--<option value="北京" selected="selected">北京</option>-->
+                        <!--<option value="杭州">杭州</option>-->
+                <!--</select>-->
+                <!--<div class="charact">-->
+                <!--<input type="checkbox" name="hobby"><span>运动</span>-->
+                <!--<input type="checkbox" name="hobby"><span>艺术</span>-->
+                <!--<input type="checkbox" name="hobby"><span>科学</span></div>-->
+                <!--<div class="charact"><textarea rows="10" cols="100">这是一个多行输入框，输入您的个人描述</textarea></div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<input type="submit" value="确认提交">-->
+    <!--</nav>-->
+    <h2 id="navtitle">这里以后是一个侧栏，这是侧栏的标题</h2>
+    <table id="navigator">
+        <tbody>
+        <tr>
+            <td>请输入邮箱地址</td>
+            <td><input type="text"  value="这是一个文本输入框"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>邮箱地址请按要求格式输入</td>
+        </tr>
+        <tr>
+            <td>请输入密码</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td>请再次输入密码</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>密码请为6-16位英文数字</td>
+        </tr>
+        <tr>
+            <td>性别</td>
+            <td><input type="radio"  name="1" checked="checked"><span>男</span><input type="radio" name="1"><span>女</span></td>
+        </tr>
+        <tr>
+            <td>城市</td>
+            <td><select>
+                <option value="广州">广州</option>
+                <option value="北京" selected="selected">北京</option>
+                <option value="杭州">杭州</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>爱好</td>
+            <td><input type="checkbox" name="hobby"><span>运动</span>
                 <input type="checkbox" name="hobby"><span>艺术</span>
-                <input type="checkbox" name="hobby"><span>科学</span></div>
-                <div class="charact"><textarea rows="10" cols="100">这是一个多行输入框，输入您的个人描述</textarea></div>
-            </div>
-        </div>
-        <input type="submit" value="确认提交">
-    </nav>
+                <input type="checkbox" name="hobby"><span>科学</span></td>
+        </tr>
+        <tr>
+            <td>个人描述</td>
+            <td>
+                <textarea rows="10" cols="80">这是一个多行输入框，输入您的个人描述</textarea>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <input type="submit" value="确认提交">
     </div>
 <footer>版权所有&copy;</footer>
 </body>
