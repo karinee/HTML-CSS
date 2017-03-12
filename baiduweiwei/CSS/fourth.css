@@ -13,15 +13,8 @@ html{
 html,body{
     height:100%;
 }
-/*body{*/
-    /*-webkit-align-items: center;*/
-    /*-ms-flex-align:center;*/
-    /*align-items: center;*/
-    /*display:-webkit-flex;*/
-    /*display:flex;*/
-/*}*/
+
 #out{
-    /*position: relative;*/
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -38,7 +31,7 @@ html,body{
     background-color:#ccc;
     overflow: hidden;
 }
-#leftup,#rightdown{
+.circle{
     width:100px;
     height:100px;
    -webkit-border-radius:50%;
@@ -46,11 +39,12 @@ html,body{
     border-radius:50%;
     background-color: #fc0;
 }
-#leftup{
-    margin-top:-50px;
-    margin-left:-50px;
+.circle1{
+    position:absolute;
+    top:-50px;
+    left:-50px;
 }
-#rightdown{
+.circle2{
     position:absolute;
     right:-50px;
     bottom:-50px;
